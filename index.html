@@ -24,9 +24,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         window.onload = function () {
-            let timeout = 10000;
+            let timeout = 1000;
             if (window.location.hostname == 'localhost' || window.location.hostname == '127.0.0.1') {
-                timeout = 10000;
+                timeout = 1000;
             }
             var url = window.location.href;
             var urlObject = new URL(url);
@@ -40,7 +40,7 @@
             }, timeout);
         }
         $(document).ready(function () {
-            var seconds = 10;
+            var seconds = 1;
             var countdown = setInterval(function () {
                 seconds--;
                 $('#seconds').text(seconds);
